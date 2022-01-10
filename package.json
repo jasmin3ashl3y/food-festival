@@ -1,0 +1,24 @@
+{
+  "name": "food-festival",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "popper": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasmin3ashl3y/food-festival.git"
+  },
+  "author": "jasmin3ashl3y",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasmin3ashl3y/food-festival/issues"
+  },
+  "homepage": "https://github.com/jasmin3ashl3y/food-festival#readme"
+}
