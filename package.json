@@ -2,34 +2,35 @@
   "name": "food-festival",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "bootstrap": "^4.3.1",
-    "jquery": "^3.6.0",
-    "popper": "^1.0.1",
-    "popper.js": "^1.16.0"
+  "main": "assets/js/script.js",
+  "scripts": {
+    "webpack": "webpack --watch",
+    "build": "webpack",
+    "start:dev": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bugs": {
+    "url": "https://github.com/jasmin3ashl3y/food-festival/issues"
+  },
+  "homepage": "https://github.com/jasmin3ashl3y/food-festival#readme",
+  "keywords": [],
+  "author": "jasmin3ashl3y",
+  "license": "ISC",
   "devDependencies": {
     "file-loader": "^6.2.0",
     "image-webpack-loader": "^8.1.0",
     "webpack": "^5.65.0",
     "webpack-bundle-analyzer": "^4.5.0",
-    "webpack-cli": "^4.9.1"
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.3"
   },
-  "scripts": {
-    "test": "test",
-    "webpack": "webpack --watch",
-    "build": "webpack"
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jasmin3ashl3y/food-festival.git"
-  },
-  "author": "jasmin3ashl3y",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jasmin3ashl3y/food-festival/issues"
-  },
-  "homepage": "https://github.com/jasmin3ashl3y/food-festival#readme",
-  "keywords": []
+  }
 }
