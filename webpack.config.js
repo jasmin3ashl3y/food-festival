@@ -11,7 +11,7 @@ const config = {
       },
     output: {
         filename: '[name].bundle.js',
-        path: __dirname + "/dist",
+        path: `${__dirname}/dist`,
       },
       module: {
         rules: [
@@ -25,7 +25,7 @@ const config = {
                       name (file) {
                           return "[path][name].[ext]";
                       },
-                      publicPath: function(url) {
+                      publicPath(url) {
                           return url.replace("../", "/assets/");
                       }
                   }
