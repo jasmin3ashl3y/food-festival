@@ -1,5 +1,5 @@
 const webpack = require("webpack");
-const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const path = require("path");
 
 const config = {
@@ -18,8 +18,9 @@ const config = {
           {
             test: /\.(png|jpe?g|gif)$/i,
             use: [
+              'file-loader',
                 {
-                  loader: 'file-loader',
+                  loader: 'image-webpack-loader',
                   options: {
                       esModule: false,
                       name (file) {
@@ -30,9 +31,6 @@ const config = {
                       }
                   }
                 },
-                {
-                    loader: 'image-webpack-loader'
-                }
             ]
           }
         ]
@@ -46,7 +44,14 @@ const config = {
             analyzerMode: "static", // the report outputs to an HTML file in the dist folder
           })
     ],
-    mode: 'development'
+    mode: 'development',
+     devServer: {
+       static: {
+         directory: path.join(__dirname, './'),
+       },
+       compress: true,
+       port: 8080,
+     },
 };
 
 module.exports = config;
